@@ -121,12 +121,12 @@ int main() {
         else if (command == "delete") {
             deleteBook(books);
         }
+        else if (command == "list") {
+            listBooks(books);
+        }
         else if (command == "exit") {
             cout << "Излизане от програмата." << endl;
             break;
-        }
-        else if (command == "list") {
-            listBooks(books);
         }
         else {
             cout << "Невалидна команда. Налични команди: add, search, delete, list, exit" << endl;
