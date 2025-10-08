@@ -106,7 +106,7 @@ int main() {
     string command;
 
     cout << "Система за управление на библиотека\n";
-    cout << "Налични команди: add, search, delete, exit\n";
+    cout << "Налични команди: add, search, delete, list, exit\n";
 
     while (true) {
         cout << "\nВъведи команда: ";
@@ -125,8 +125,11 @@ int main() {
             cout << "Излизане от програмата." << endl;
             break;
         }
+        else if (command == "list") {
+            listBooks(books);
+        }
         else {
-            cout << "Невалидна команда. Налични команди: add, search, delete, exit" << endl;
+            cout << "Невалидна команда. Налични команди: add, search, delete, list, exit" << endl;
         }
     }
     
